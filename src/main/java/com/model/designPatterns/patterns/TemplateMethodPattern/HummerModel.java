@@ -14,22 +14,29 @@ public abstract class HummerModel {
    /*
     * 首先，这个模型要能够被发动起来，
     */
-	public abstract void start();
+	protected abstract void start();
 	
 	//停车
-	public abstract void stop();
+	protected abstract void stop();
 	
 	//发声
-	public abstract void alarm();
+	protected abstract void alarm();
 	
 	//引擎声
-	public abstract void engineBoom();
+	protected abstract void engineBoom();
 	
 	//开动起来
-	public void run(){
+	final public void run(){
 		this.start();
 		this.engineBoom();
-		this.alarm();
+		if(this.isAlarm()){
+			this.alarm();	
+		}
 		this.stop();
+	}
+	
+	//钩子方法
+	protected boolean isAlarm(){
+		return true;
 	}
 }
