@@ -18,7 +18,6 @@ public class AdvancedMemberStrategy implements MemberStrategy{
 	 * @param booksPrice
 	 * @return
 	 */
-	@Override
 	public double calcPrice(double booksPrice) {
 		System.out.println("高级会员折扣为 20%");
 		return booksPrice*0.8;

@@ -16,7 +16,6 @@ public class FemaleYellowHuman extends AbstractYellowHuman{
 	 * Description: 
 	 * @Version1.0 2015-5-8 上午10:29:20 by 张富成（fc.zhang@zuche.com）创建
 	 */
-	@Override
 	public void getSex() {
 		System.out.println("黄人女性");
 	}

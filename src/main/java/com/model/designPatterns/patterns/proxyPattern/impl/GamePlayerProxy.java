@@ -25,7 +25,6 @@ public class GamePlayerProxy implements IGamePlayer{
 	 * @param user
 	 * @param password
 	 */
-	@Override
 	public void login(String user, String password) {
 		this.iGamePlayer.login(user, password);
 	}
@@ -34,7 +33,6 @@ public class GamePlayerProxy implements IGamePlayer{
 	 * Description: 
 	 * @Version1.0 2015-5-8 下午5:13:34 by 张富成（fc.zhang@zuche.com）创建
 	 */
-	@Override
 	public void killBoss() {
 		this.iGamePlayer.killBoss();
 	}
@@ -43,7 +41,6 @@ public class GamePlayerProxy implements IGamePlayer{
 	 * Description: 
 	 * @Version1.0 2015-5-8 下午5:13:34 by 张富成（fc.zhang@zuche.com）创建
 	 */
-	@Override
 	public void upgrade() {
 	   this.iGamePlayer.upgrade();
 	}

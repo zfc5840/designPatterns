@@ -20,7 +20,6 @@ public class MaleFactory implements HumanFactory{
 	 * @Version1.0 2015-5-8 上午10:32:15 by 张富成（fc.zhang@zuche.com）创建
 	 * @return
 	 */
-	@Override
 	public Human createYellowMan() {
 		return new MaleYellowHuman();
 	}

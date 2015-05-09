@@ -18,7 +18,6 @@ public class PrimaryMemberStrategy implements MemberStrategy{
 	 * @param booksPrice
 	 * @return
 	 */
-	@Override
 	public double calcPrice(double booksPrice) {
 		System.out.println("普通会员没有折扣");
 		return booksPrice;

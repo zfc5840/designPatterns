@@ -19,7 +19,6 @@ public class PasswordLogin implements Login{
 	 * @param password
 	 * @return
 	 */
-	@Override
 	public boolean verify(String name, String password) {
 		/*
 		 * 具体业务逻辑
